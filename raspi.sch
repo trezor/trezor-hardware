@@ -629,15 +629,15 @@ The GPIO Connector (P1):&lt;br&gt;
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="33.02" y="25.4"/>
-<instance part="JP1" gate="A" x="91.44" y="66.04"/>
+<instance part="JP1" gate="A" x="109.22" y="33.02"/>
 <instance part="JP2" gate="A" x="0" y="22.86" rot="MR0"/>
 <instance part="SW1" gate="G$1" x="81.28" y="20.32"/>
 <instance part="SW2" gate="G$1" x="81.28" y="15.24"/>
 <instance part="+3V1" gate="G$1" x="7.62" y="81.28"/>
 <instance part="+3V2" gate="G$1" x="88.9" y="25.4"/>
-<instance part="GND1" gate="1" x="66.04" y="60.96"/>
-<instance part="GND2" gate="1" x="81.28" y="53.34"/>
-<instance part="+3V4" gate="G$1" x="81.28" y="81.28"/>
+<instance part="GND1" gate="1" x="66.04" y="66.04" rot="R90"/>
+<instance part="GND2" gate="1" x="99.06" y="20.32"/>
+<instance part="+3V4" gate="G$1" x="99.06" y="48.26"/>
 <instance part="+3V3" gate="G$1" x="93.98" y="25.4"/>
 </instances>
 <busses>
@@ -646,9 +646,9 @@ The GPIO Connector (P1):&lt;br&gt;
 <net name="+3V3" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
-<wire x1="88.9" y1="76.2" x2="81.28" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="43.18" x2="99.06" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
-<wire x1="81.28" y1="76.2" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="43.18" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="1-+3V3"/>
@@ -670,15 +670,14 @@ The GPIO Connector (P1):&lt;br&gt;
 <net name="GND" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="8"/>
-<wire x1="88.9" y1="58.42" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="25.4" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="81.28" y1="58.42" x2="81.28" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="25.4" x2="99.06" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="6-GND"/>
-<wire x1="60.96" y1="66.04" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="66.04" x2="63.5" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="66.04" y1="66.04" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -714,9 +713,9 @@ The GPIO Connector (P1):&lt;br&gt;
 <net name="N$7" class="0">
 <segment>
 <wire x1="60.96" y1="25.4" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="25.4" x2="76.2" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="25.4" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="6"/>
-<wire x1="76.2" y1="63.5" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="30.48" x2="106.68" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="22-GPIO6"/>
 </segment>
 </net>
@@ -724,18 +723,16 @@ The GPIO Connector (P1):&lt;br&gt;
 <segment>
 <pinref part="U$1" gate="G$1" pin="18-GPIO5"/>
 <wire x1="60.96" y1="35.56" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="35.56" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="35.56" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="3"/>
-<wire x1="73.66" y1="71.12" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="38.1" x2="106.68" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
-<wire x1="88.9" y1="73.66" x2="71.12" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="73.66" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="40.64" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="16-GPIO4"/>
-<wire x1="71.12" y1="40.64" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
