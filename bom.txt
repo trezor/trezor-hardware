@@ -1,0 +1,34 @@
+Product
+=======
+- 1x [OLED] OLED display 128x64
+- 2x [BTNS] SMD button
+- 1x [MUSB] Micro USB female connector
+- 1x [LM4F] LM4F120H5QR Stellaris MCU
+
+Launchpad shield
+================
+- 1x [OLED] OLED display 128x64
+
+Raspberry shield
+================
+- 1x [OLED] OLED display 128x64
+- 2x [BTNT] TD-03XA SMD cactile button
+- 1x [MUSB] Micro USB female connector
+- 1x [HIDC] SiLabs CP2110 HID-232 converter
+
+???
+===
+- 1x [HRNG] Atmel ATSHA204 CryptoAuthentication
+- 1x [N556] NE556 Dual timer
+
+Links
+-----
+
+[BTNS] http://www.gme.cz/mikrospinace-do-dps/p-b17310-p630-143/
+[BTNT] http://www.gme.cz/mikrospinace-do-dps/td-03xa-smd-force-t-p630-299/
+[HIDC] http://www.silabs.com/products/interface/usbtouart/Pages/usb-to-uart-bridge.aspx
+[HRNG] http://www.atmel.com/devices/atsha204.aspx
+[LM4F] http://www.ti.com/product/lm4f120h5qr
+[MUSB] http://www.gme.cz/konektory-usb-micro-b/usb-konektor-esb227110100z-p832-239/
+[N556] http://www.gme.cz/casovace/ne556-smd-p927-002/
+[OLED] http://www.wide.hk/products.php?product=128X64-OLED-LED-Display-Module-SSD1306-%28White-Color%29
