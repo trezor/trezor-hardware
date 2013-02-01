@@ -3904,9 +3904,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 </classes>
 <parts>
 <part name="U$1" library="stellaris" deviceset="LM4F120H5QR" device=""/>
-<part name="U2" library="SparkFun-Connectors" deviceset="USB-AB" device=""/>
+<part name="U2" library="SparkFun-Connectors" deviceset="USB-AB" device="" value="USB"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="U3" library="microbuilder" deviceset="DISP_OLED_UG-2864HSWEG01" device="0.96&quot;"/>
+<part name="U3" library="microbuilder" deviceset="DISP_OLED_UG-2864HSWEG01" device="0.96&quot;" value="DISPLAY"/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
