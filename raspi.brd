@@ -120,6 +120,7 @@
 <wire x1="39.37" y1="43.18" x2="39.37" y2="56.505" width="0" layer="20"/>
 <wire x1="39.37" y1="56.505" x2="0" y2="56.505" width="0" layer="20"/>
 <wire x1="0" y1="56.505" x2="0" y2="1.27" width="0" layer="20"/>
+<text x="15.24" y="11.43" size="1.778" layer="16" font="vector" rot="MR0">trezor</text>
 </plain>
 <libraries>
 <library name="RaspberryPi">
