@@ -1,9 +1,9 @@
-(PCB "/home/stick/eagle/bitkey/product.brd"
+(PCB "C:/Users/fabhack/Documents/eagle/bitkey-hw/product.brd"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad CadSoft)
-    (host_version 'EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft')
+    (host_version 'EAGLE Version 6.4.0 Copyright (c) 1988-2013 CadSoft')
   )
   (resolution mil 254)
   (unit mil)
@@ -202,7 +202,7 @@
       (place "U3" 2050.000000 625.000000 Front 90.000000)
     )
     (component "DSQ10_1P5X0P9$imported" 
-      (place "U4" 312.000000 552.000000 Front 90.000000)
+      (place "U4" 336.000000 516.000000 Front 90.000000)
     )
   )
   (library
