@@ -1,9 +1,9 @@
-(PCB "C:/Users/fabhack/Documents/eagle/bitkey-hw/product.brd"
+(PCB "/home/stick/eagle/bitkey/product.brd"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad CadSoft)
-    (host_version 'EAGLE Version 6.4.0 Copyright (c) 1988-2013 CadSoft')
+    (host_version 'EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft')
   )
   (resolution mil 254)
   (unit mil)
