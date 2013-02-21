@@ -2377,7 +2377,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="USB_D_N" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="D-"/>
 <wire x1="132.08" y1="25.4" x2="180.34" y2="25.4" width="0.1524" layer="91"/>
@@ -2386,7 +2386,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="180.34" y1="68.58" x2="177.8" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="USB_D_P" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="D+"/>
 <wire x1="132.08" y1="22.86" x2="182.88" y2="22.86" width="0.1524" layer="91"/>
