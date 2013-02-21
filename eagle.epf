@@ -364,10 +364,10 @@ UsedLibrary="/home/stick/work/bitkey/bxl/imported.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="0 50 599 449"
-State=1
+Loc="303 265 902 664"
+State=2
 Number=0
 
 [Desktop]
-Screen="1920 1200"
+Screen="1400 1050"
 Window="Win_1"
