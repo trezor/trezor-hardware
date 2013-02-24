@@ -364,7 +364,7 @@ UsedLibrary="/home/stick/work/bitkey/bxl/imported.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="303 265 902 664"
+Loc="223 155 1065 764"
 State=2
 Number=0
 
