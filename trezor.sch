@@ -3893,61 +3893,6 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="imported">
-<packages>
-<package name="DRY6">
-<smd name="1" x="-0.3556" y="0.508" dx="0.5588" dy="0.3048" layer="1"/>
-<smd name="2" x="-0.381" y="0" dx="0.508" dy="0.3048" layer="1"/>
-<smd name="3" x="-0.381" y="-0.508" dx="0.508" dy="0.3048" layer="1"/>
-<smd name="4" x="0.381" y="-0.508" dx="0.508" dy="0.3048" layer="1" rot="R180"/>
-<smd name="5" x="0.381" y="0" dx="0.508" dy="0.3048" layer="1" rot="R180"/>
-<smd name="6" x="0.381" y="0.508" dx="0.508" dy="0.3048" layer="1" rot="R180"/>
-<wire x1="-0.5334" y1="-0.762" x2="0.5334" y2="-0.762" width="0" layer="21"/>
-<wire x1="0.5334" y1="-0.762" x2="0.5334" y2="0.762" width="0" layer="21"/>
-<wire x1="0.5334" y1="0.762" x2="-0.5334" y2="0.762" width="0" layer="21"/>
-<wire x1="-0.5334" y1="0.762" x2="-0.5334" y2="-0.762" width="0" layer="21"/>
-<wire x1="0.3048" y1="0.762" x2="-0.3048" y2="0.762" width="0" layer="21" curve="-180"/>
-</package>
-</packages>
-<symbols>
-<symbol name="TPD4S012_DRY_6">
-<pin name="D+" x="0" y="0" direction="pas"/>
-<pin name="D-" x="0" y="-2.54" direction="pas"/>
-<pin name="ID" x="0" y="-5.08" direction="pas"/>
-<pin name="GND" x="55.88" y="-5.08" direction="pas" rot="R180"/>
-<pin name="N.C." x="55.88" y="-2.54" direction="pas" rot="R180"/>
-<pin name="VBUS" x="55.88" y="0" direction="pas" rot="R180"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-10.16" width="0.127" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="48.26" y2="-10.16" width="0.127" layer="94"/>
-<wire x1="48.26" y1="-10.16" x2="48.26" y2="5.08" width="0.127" layer="94"/>
-<wire x1="48.26" y1="5.08" x2="7.62" y2="5.08" width="0.127" layer="94"/>
-<text x="7.8486" y="5.8166" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
-<text x="7.6454" y="-12.7254" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="TPD4S012_DRY_6" prefix="U">
-<gates>
-<gate name="A" symbol="TPD4S012_DRY_6" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DRY6">
-<connects>
-<connect gate="A" pin="D+" pad="1"/>
-<connect gate="A" pin="D-" pad="2"/>
-<connect gate="A" pin="GND" pad="4"/>
-<connect gate="A" pin="ID" pad="3"/>
-<connect gate="A" pin="N.C." pad="5"/>
-<connect gate="A" pin="VBUS" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3967,7 +3912,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="1uF"/>
 <part name="C2" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="1uF"/>
-<part name="C3" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="104"/>
+<part name="C3" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="C4" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="1uF"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="C5" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="1uF"/>
@@ -4008,7 +3953,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <part name="C17" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="1uF"/>
 <part name="C18" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="1uF"/>
 <part name="C19" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
-<part name="C20" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="2.2uF"/>
+<part name="C20" library="SparkFun-Passives" deviceset="CAP" device="0805" value="2.2uF"/>
 <part name="C21" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="10k"/>
@@ -4025,9 +3970,6 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <attribute name="TP_SIGNAL_NAME" value=""/>
 </part>
 <part name="IC1" library="linear" deviceset="MCP1703" device="CB"/>
-<part name="U5" library="imported" deviceset="TPD4S012_DRY_6" device=""/>
-<part name="P+3" library="supply1" deviceset="+5V" device=""/>
-<part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 </parts>
@@ -4037,7 +3979,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="22.86" y="60.96"/>
-<instance part="U2" gate="G$1" x="86.36" y="-38.1" rot="R180"/>
+<instance part="U2" gate="G$1" x="104.14" y="-30.48" rot="MR270"/>
 <instance part="GND2" gate="1" x="170.18" y="63.5" rot="R180"/>
 <instance part="U3" gate="G$1" x="132.08" y="20.32" rot="MR270"/>
 <instance part="+3V4" gate="G$1" x="116.84" y="76.2"/>
@@ -4100,11 +4042,8 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <instance part="TP3" gate="G$1" x="-35.56" y="30.48"/>
 <instance part="TP4" gate="G$1" x="-33.02" y="27.94"/>
 <instance part="IC1" gate="G$1" x="-30.48" y="10.16"/>
-<instance part="U5" gate="A" x="109.22" y="-38.1"/>
-<instance part="P+3" gate="1" x="170.18" y="-33.02"/>
-<instance part="GND17" gate="1" x="170.18" y="-48.26"/>
-<instance part="P+1" gate="1" x="93.98" y="-25.4"/>
-<instance part="GND1" gate="1" x="93.98" y="-48.26"/>
+<instance part="P+1" gate="1" x="114.3" y="-17.78"/>
+<instance part="GND1" gate="1" x="93.98" y="-27.94"/>
 </instances>
 <busses>
 </busses>
@@ -4350,16 +4289,10 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U5" gate="A" pin="GND"/>
-<pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="165.1" y1="-43.18" x2="170.18" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="-43.18" x2="170.18" y2="-45.72" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U2" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="91.44" y1="-43.18" x2="93.98" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="-43.18" x2="93.98" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-25.4" x2="99.06" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-20.32" x2="93.98" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-20.32" x2="93.98" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -4477,16 +4410,10 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <pinref part="IC1" gate="G$1" pin="VI"/>
 </segment>
 <segment>
-<pinref part="U5" gate="A" pin="VBUS"/>
-<pinref part="P+3" gate="1" pin="+5V"/>
-<wire x1="165.1" y1="-38.1" x2="170.18" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="-38.1" x2="170.18" y2="-35.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U2" gate="G$1" pin="VBUS"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
-<wire x1="91.44" y1="-33.02" x2="93.98" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="-33.02" x2="93.98" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-25.4" x2="109.22" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-22.86" x2="114.3" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="-22.86" x2="114.3" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -4616,15 +4543,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <wire x1="86.36" y1="-7.62" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PD4"/>
 <wire x1="86.36" y1="30.48" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="D-"/>
-<wire x1="91.44" y1="-35.56" x2="101.6" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="-35.56" x2="101.6" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="U5" gate="A" pin="D-"/>
-<wire x1="101.6" y1="-40.64" x2="106.68" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="-40.64" x2="109.22" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="-7.62" x2="106.68" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="-7.62" x2="106.68" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="106.68" y="-40.64"/>
+<pinref part="U2" gate="G$1" pin="D-"/>
+<wire x1="106.68" y1="-7.62" x2="106.68" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="USB_D_P" class="0">
@@ -4632,23 +4553,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <wire x1="83.82" y1="-10.16" x2="83.82" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PD5"/>
 <wire x1="83.82" y1="27.94" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="D+"/>
-<wire x1="91.44" y1="-38.1" x2="101.6" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="-38.1" x2="104.14" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="U5" gate="A" pin="D+"/>
-<wire x1="104.14" y1="-38.1" x2="109.22" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="-10.16" x2="104.14" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="-10.16" x2="104.14" y2="-38.1" width="0.1524" layer="91"/>
-<junction x="104.14" y="-38.1"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="USBID"/>
-<pinref part="U5" gate="A" pin="ID"/>
-<wire x1="91.44" y1="-40.64" x2="96.52" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="-40.64" x2="96.52" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="-43.18" x2="109.22" y2="-43.18" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="D+"/>
+<wire x1="104.14" y1="-25.4" x2="104.14" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
