@@ -607,55 +607,6 @@
 <hole x="8" y="-5.45" drill="0.4"/>
 <wire x1="13.35" y1="-7.5" x2="-13.35" y2="-7.5" width="0.2032" layer="51" style="shortdash"/>
 </package>
-<package name="TESTPOINT_SMT">
-<description>Surface Mount Test Point - Compact SMT</description>
-<wire x1="-2.75" y1="2" x2="2.75" y2="2" width="0.2032" layer="21"/>
-<wire x1="2.75" y1="2" x2="2.75" y2="-2" width="0.2032" layer="21"/>
-<wire x1="2.75" y1="-2" x2="-2.75" y2="-2" width="0.2032" layer="21"/>
-<wire x1="-2.75" y1="-2" x2="-2.75" y2="2" width="0.2032" layer="21"/>
-<smd name="P$1" x="0" y="0" dx="4.7" dy="3.4" layer="1"/>
-<text x="3.048" y="-1.143" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="3.048" y="-1.778" size="0.4064" layer="25" ratio="10">&gt;VALUE</text>
-</package>
-<package name="TESTPOINT_PAD_2MM">
-<description>Testpoint - Pad</description>
-<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.2032" layer="21"/>
-<smd name="P$1" x="0" y="0" dx="2" dy="2" layer="1" cream="no"/>
-<text x="-1.016" y="0" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.016" y="-0.508" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="TESTPOINT_ROUND_2MM">
-<description>Testpoint - Round 2mm</description>
-<circle x="0" y="0" radius="1.3029" width="0.2032" layer="21"/>
-<smd name="P$1" x="0" y="0" dx="2" dy="2" layer="1" roundness="100" cream="no"/>
-<text x="1.651" y="0.127" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="1.651" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="1X01_ROUND">
-<pad name="1" x="0" y="0" drill="1" diameter="1.6764" rot="R90"/>
-<text x="-1.3462" y="1.8288" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.27" y="-3.175" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-</package>
-<package name="PAD-1.5X2.0">
-<description>1.5 x 2.0mm SMT pad (no solder paste)</description>
-<smd name="P$1" x="0" y="0" dx="1.5" dy="2" layer="1" cream="no"/>
-</package>
-<package name="TESTPOINT_ROUND_1MM">
-<circle x="0" y="0" radius="0.7" width="0.2032" layer="21"/>
-<smd name="P$1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
-<text x="1.143" y="-0.127" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="1.143" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="TESTPOINT_ROUND_0.5MM">
-<circle x="0" y="0" radius="0.45" width="0.2032" layer="21"/>
-<smd name="P$1" x="0" y="0" dx="0.5" dy="0.5" layer="1" roundness="100" cream="no"/>
-<text x="0.889" y="-0.127" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="0.889" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="UG-2864HSWEG01">
@@ -720,12 +671,6 @@
 <pin name="VCC" x="-25.4" y="-33.02" length="short" direction="pwr"/>
 <pin name="VLSS" x="-25.4" y="-35.56" length="short" direction="pwr"/>
 <pin name="NC(GND)@2" x="-25.4" y="-38.1" length="short" direction="in"/>
-</symbol>
-<symbol name="TESTPOINT">
-<circle x="0" y="3.81" radius="1.27" width="0.254" layer="94"/>
-<text x="-2.54" y="7.62" size="1.27" layer="95">&gt;NAME</text>
-<text x="-2.54" y="5.715" size="1.27" layer="95">&gt;VALUE</text>
-<pin name="P$1" x="0" y="0" visible="off" length="short" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -805,78 +750,6 @@
 <connect gate="G$1" pin="VDD" pad="9"/>
 <connect gate="G$1" pin="VLSS" pad="29"/>
 <connect gate="G$1" pin="VSS" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TESTPOINT" prefix="TP" uservalue="yes">
-<description>&lt;b&gt;Test Point&lt;/b&gt;
-&lt;p&gt;Various test points for characterisation and PCB testing&lt;/p&gt;
-&lt;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;b&gt;TESTPOINT_SMT&lt;/b&gt; - Compact Surface Mount Test Point [Digikey: 5016KTR-ND]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="TESTPOINT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TESTPOINT_SMT">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PAD" package="TESTPOINT_PAD_2MM">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="ROUND2MM" package="TESTPOINT_ROUND_2MM">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0.1&quot;" package="1X01_ROUND">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="BOM" value="EXCLUDE" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="1.5X2.0MM_NOCREAM" package="PAD-1.5X2.0">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="ROUND1MM" package="TESTPOINT_ROUND_1MM">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="ROUND0.5MM" package="TESTPOINT_ROUND_0.5MM">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3312,6 +3185,147 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-samtec">
+<description>&lt;b&gt;Samtec Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SSW-103-02-S-D">
+<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST SOCKET&lt;/b&gt;&lt;p&gt;
+Source: Samtec SSW.pdf</description>
+<wire x1="-3.939" y1="2.425" x2="3.939" y2="2.425" width="0.2032" layer="21"/>
+<wire x1="3.939" y1="2.425" x2="3.939" y2="-2.425" width="0.2032" layer="21"/>
+<wire x1="3.939" y1="-2.425" x2="-3.939" y2="-2.425" width="0.2032" layer="21"/>
+<wire x1="-3.939" y1="-2.425" x2="-3.939" y2="2.425" width="0.2032" layer="21"/>
+<wire x1="-3.285" y1="-0.515" x2="-1.785" y2="-0.515" width="0.2032" layer="51"/>
+<wire x1="-1.785" y1="-0.515" x2="-1.785" y2="-2.015" width="0.2032" layer="51"/>
+<wire x1="-1.785" y1="-2.015" x2="-3.285" y2="-2.015" width="0.2032" layer="51"/>
+<wire x1="-3.285" y1="-2.015" x2="-3.285" y2="-0.515" width="0.2032" layer="51"/>
+<wire x1="-3.285" y1="2.025" x2="-1.785" y2="2.025" width="0.2032" layer="51"/>
+<wire x1="-1.785" y1="2.025" x2="-1.785" y2="0.525" width="0.2032" layer="51"/>
+<wire x1="-1.785" y1="0.525" x2="-3.285" y2="0.525" width="0.2032" layer="51"/>
+<wire x1="-3.285" y1="0.525" x2="-3.285" y2="2.025" width="0.2032" layer="51"/>
+<wire x1="-0.745" y1="-0.515" x2="0.755" y2="-0.515" width="0.2032" layer="51"/>
+<wire x1="0.755" y1="-0.515" x2="0.755" y2="-2.015" width="0.2032" layer="51"/>
+<wire x1="0.755" y1="-2.015" x2="-0.745" y2="-2.015" width="0.2032" layer="51"/>
+<wire x1="-0.745" y1="-2.015" x2="-0.745" y2="-0.515" width="0.2032" layer="51"/>
+<wire x1="-0.745" y1="2.025" x2="0.755" y2="2.025" width="0.2032" layer="51"/>
+<wire x1="0.755" y1="2.025" x2="0.755" y2="0.525" width="0.2032" layer="51"/>
+<wire x1="0.755" y1="0.525" x2="-0.745" y2="0.525" width="0.2032" layer="51"/>
+<wire x1="-0.745" y1="0.525" x2="-0.745" y2="2.025" width="0.2032" layer="51"/>
+<wire x1="1.795" y1="-0.515" x2="3.295" y2="-0.515" width="0.2032" layer="51"/>
+<wire x1="3.295" y1="-0.515" x2="3.295" y2="-2.015" width="0.2032" layer="51"/>
+<wire x1="3.295" y1="-2.015" x2="1.795" y2="-2.015" width="0.2032" layer="51"/>
+<wire x1="1.795" y1="-2.015" x2="1.795" y2="-0.515" width="0.2032" layer="51"/>
+<wire x1="1.795" y1="2.025" x2="3.295" y2="2.025" width="0.2032" layer="51"/>
+<wire x1="3.295" y1="2.025" x2="3.295" y2="0.525" width="0.2032" layer="51"/>
+<wire x1="3.295" y1="0.525" x2="1.795" y2="0.525" width="0.2032" layer="51"/>
+<wire x1="1.795" y1="0.525" x2="1.795" y2="2.025" width="0.2032" layer="51"/>
+<pad name="1" x="-2.54" y="-1.27" drill="1" diameter="1.5" shape="octagon"/>
+<pad name="2" x="-2.54" y="1.27" drill="1" diameter="1.5" shape="octagon"/>
+<pad name="3" x="0" y="-1.27" drill="1" diameter="1.5" shape="octagon"/>
+<pad name="4" x="0" y="1.27" drill="1" diameter="1.5" shape="octagon"/>
+<pad name="5" x="2.54" y="-1.27" drill="1" diameter="1.5" shape="octagon"/>
+<pad name="6" x="2.54" y="1.27" drill="1" diameter="1.5" shape="octagon"/>
+<text x="-3.048" y="-4.318" size="1.6764" layer="21" font="vector">1</text>
+<text x="-3.048" y="2.794" size="1.6764" layer="21" font="vector">2</text>
+<text x="-4.445" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="TSW-103-02-S-D-RA">
+<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
+Source: Samtec TSW.pdf</description>
+<wire x1="-3.939" y1="-2.046" x2="3.939" y2="-2.046" width="0.2032" layer="21"/>
+<wire x1="3.939" y1="-2.046" x2="3.939" y2="-0.106" width="0.2032" layer="21"/>
+<wire x1="3.939" y1="-0.106" x2="-3.939" y2="-0.106" width="0.2032" layer="21"/>
+<wire x1="-3.939" y1="-0.106" x2="-3.939" y2="-2.046" width="0.2032" layer="21"/>
+<pad name="1" x="2.54" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="2" x="2.54" y="4.064" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="3" x="0" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="4" x="0" y="4.064" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="5" x="-2.54" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="6" x="-2.54" y="4.064" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<text x="-4.445" y="-7.62" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-7.62" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="3.825" y="0.775" size="1.1" layer="21" font="vector" rot="SR0">1</text>
+<text x="3.79" y="3.29" size="1.1" layer="21" font="vector" rot="SR0">2</text>
+<rectangle x1="-2.794" y1="0" x2="-2.286" y2="4.318" layer="51"/>
+<rectangle x1="-0.254" y1="0" x2="0.254" y2="4.318" layer="51"/>
+<rectangle x1="2.286" y1="0" x2="2.794" y2="4.318" layer="51"/>
+<rectangle x1="-2.794" y1="-7.89" x2="-2.286" y2="-2.04" layer="21"/>
+<rectangle x1="-0.254" y1="-7.89" x2="0.254" y2="-2.04" layer="21"/>
+<rectangle x1="2.286" y1="-7.89" x2="2.794" y2="-2.04" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="FPINV">
+<wire x1="-1.778" y1="0.508" x2="0" y2="0.508" width="0.254" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.508" x2="-1.778" y2="-0.508" width="0.254" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-3.048" y="0.762" size="1.524" layer="95" rot="R180">&gt;NAME</text>
+<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="FPIN">
+<wire x1="-1.778" y1="0.508" x2="0" y2="0.508" width="0.254" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.508" x2="-1.778" y2="-0.508" width="0.254" layer="94"/>
+<text x="-3.048" y="0.762" size="1.524" layer="95" rot="R180">&gt;NAME</text>
+<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SSW-103-02-S-D" prefix="X">
+<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST SOCKET&lt;/b&gt;&lt;p&gt;
+Source: Samtec SSW.pdf</description>
+<gates>
+<gate name="-1" symbol="FPINV" x="-10.16" y="2.54" addlevel="always"/>
+<gate name="-2" symbol="FPIN" x="10.16" y="2.54" addlevel="always"/>
+<gate name="-3" symbol="FPIN" x="-10.16" y="0" addlevel="always"/>
+<gate name="-4" symbol="FPIN" x="10.16" y="0" addlevel="always"/>
+<gate name="-5" symbol="FPIN" x="-10.16" y="-2.54" addlevel="always"/>
+<gate name="-6" symbol="FPIN" x="10.16" y="-2.54" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="SSW-103-02-S-D">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-3" pin="1" pad="3"/>
+<connect gate="-4" pin="1" pad="4"/>
+<connect gate="-5" pin="1" pad="5"/>
+<connect gate="-6" pin="1" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="SSW-103-02-S-D" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="11P9365" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-RA" package="TSW-103-02-S-D-RA">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-3" pin="1" pad="3"/>
+<connect gate="-4" pin="1" pad="4"/>
+<connect gate="-5" pin="1" pad="5"/>
+<connect gate="-6" pin="1" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="SSW-103-02-S-D-RA" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="11P9366" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3382,12 +3396,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
-<part name="TP1" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
-<part name="TP2" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
-<part name="TP3" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
-<part name="TP4" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
-<part name="TP5" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
-<part name="TP6" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
+<part name="X3" library="con-samtec" deviceset="SSW-103-02-S-D" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3457,12 +3466,12 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <instance part="P+1" gate="1" x="114.3" y="-17.78"/>
 <instance part="GND1" gate="1" x="93.98" y="-27.94"/>
 <instance part="GND17" gate="1" x="-43.18" y="25.4"/>
-<instance part="TP1" gate="G$1" x="-45.72" y="43.18" rot="R90"/>
-<instance part="TP2" gate="G$1" x="-48.26" y="40.64" rot="R90"/>
-<instance part="TP3" gate="G$1" x="-45.72" y="38.1" rot="R90"/>
-<instance part="TP4" gate="G$1" x="-48.26" y="35.56" rot="R90"/>
-<instance part="TP5" gate="G$1" x="-45.72" y="33.02" rot="R90"/>
-<instance part="TP6" gate="G$1" x="-48.26" y="30.48" rot="R90"/>
+<instance part="X3" gate="-1" x="-55.88" y="43.18"/>
+<instance part="X3" gate="-2" x="-55.88" y="40.64"/>
+<instance part="X3" gate="-3" x="-55.88" y="38.1"/>
+<instance part="X3" gate="-4" x="-55.88" y="35.56"/>
+<instance part="X3" gate="-5" x="-55.88" y="33.02"/>
+<instance part="X3" gate="-6" x="-55.88" y="30.48"/>
 </instances>
 <busses>
 </busses>
@@ -3715,10 +3724,10 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <pinref part="U2" gate="G$1" pin="GND"/>
 </segment>
 <segment>
+<pinref part="X3" gate="-6" pin="1"/>
 <pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="-43.18" y1="27.94" x2="-43.18" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="30.48" x2="-48.26" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="TP6" gate="G$1" pin="P$1"/>
+<wire x1="-53.34" y1="30.48" x2="-43.18" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="30.48" x2="-43.18" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -3906,8 +3915,10 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <wire x1="-22.86" y1="43.18" x2="-22.86" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="40.64" x2="-33.02" y2="40.64" width="0.1524" layer="91"/>
 <junction x="-22.86" y="40.64"/>
-<wire x1="-33.02" y1="40.64" x2="-48.26" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="TP2" gate="G$1" pin="P$1"/>
+<wire x1="-33.02" y1="40.64" x2="-40.64" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="40.64" x2="-40.64" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-5" pin="1"/>
+<wire x1="-40.64" y1="33.02" x2="-53.34" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -3918,8 +3929,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <wire x1="-15.24" y1="43.18" x2="-15.24" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="38.1" x2="-33.02" y2="38.1" width="0.1524" layer="91"/>
 <junction x="-15.24" y="38.1"/>
-<wire x1="-33.02" y1="38.1" x2="-45.72" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="TP3" gate="G$1" pin="P$1"/>
+<wire x1="-33.02" y1="38.1" x2="-43.18" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-3" pin="1"/>
+<wire x1="-43.18" y1="38.1" x2="-53.34" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -3927,8 +3939,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <pinref part="U$1" gate="G$1" pin="PC2/TDI"/>
 <wire x1="-2.54" y1="35.56" x2="-30.48" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="35.56" x2="-33.02" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="35.56" x2="-48.26" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="TP4" gate="G$1" pin="P$1"/>
+<wire x1="-33.02" y1="35.56" x2="-45.72" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-4" pin="1"/>
+<wire x1="-45.72" y1="35.56" x2="-53.34" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -3936,8 +3949,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <pinref part="U$1" gate="G$1" pin="PC3/TDO/SWO"/>
 <wire x1="-2.54" y1="33.02" x2="-30.48" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="33.02" x2="-35.56" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="33.02" x2="-45.72" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="TP5" gate="G$1" pin="P$1"/>
+<wire x1="-35.56" y1="33.02" x2="-35.56" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-1" pin="1"/>
+<wire x1="-35.56" y1="43.18" x2="-53.34" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -3968,9 +3982,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <wire x1="55.88" y1="101.6" x2="60.96" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="101.6" x2="60.96" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="121.92" x2="-43.18" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="121.92" x2="-43.18" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="43.18" x2="-45.72" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="TP1" gate="G$1" pin="P$1"/>
+<wire x1="-43.18" y1="121.92" x2="-43.18" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-2" pin="1"/>
+<wire x1="-43.18" y1="40.64" x2="-53.34" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="USB_D_N" class="0">

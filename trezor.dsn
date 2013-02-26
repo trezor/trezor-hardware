@@ -205,24 +205,6 @@
     (component "TACTILE_SWITCH_SMD$SparkFun-Electromechanical" 
       (place "S2" 948.000000 239.000000 Front 90.000000)
     )
-    (component "TESTPOINT_ROUND_0.5MM$microbuilder" 
-      (place "TP1" 456.000000 400.000000 Front 0.000000)
-    )
-    (component "TESTPOINT_ROUND_0.5MM$microbuilder" 
-      (place "TP2" 584.000000 400.000000 Front 0.000000)
-    )
-    (component "TESTPOINT_ROUND_0.5MM$microbuilder" 
-      (place "TP3" 552.000000 400.000000 Front 0.000000)
-    )
-    (component "TESTPOINT_ROUND_0.5MM$microbuilder" 
-      (place "TP4" 520.000000 400.000000 Front 0.000000)
-    )
-    (component "TESTPOINT_ROUND_0.5MM$microbuilder" 
-      (place "TP5" 488.000000 400.000000 Front 0.000000)
-    )
-    (component "TESTPOINT_ROUND_0.5MM$microbuilder" 
-      (place "TP6" 616.000000 400.000000 Front 0.000000)
-    )
     (component "LQFP64$stellaris" 
       (place "U$1" 596.000000 525.000000 Front 180.000000)
     )
@@ -234,6 +216,9 @@
     )
     (component "UG-2864HSWEG01_0.96IN_WRAPAROUND$microbuilder" 
       (place "U3" 1624.000000 525.000000 Front 90.000000)
+    )
+    (component "SSW-103-02-S-D$con-samtec" 
+      (place "X3" 596.000000 524.000000 Front 0.000000)
     )
   )
   (library
@@ -275,6 +260,14 @@
       (pin "Rectangle7" "1" -35.433071 0.000000)
       (pin "Rectangle7" "2" 35.433071 0.000000)
     )
+    (image "SSW-103-02-S-D$con-samtec"
+      (pin "Octagon1" "1" -100.000000 -50.000000)
+      (pin "Octagon1" "2" -100.000000 50.000000)
+      (pin "Octagon1" "3" 0.000000 -50.000000)
+      (pin "Octagon1" "4" 0.000000 50.000000)
+      (pin "Octagon1" "5" 100.000000 -50.000000)
+      (pin "Octagon1" "6" 100.000000 50.000000)
+    )
     (image "CTS406$crystal"
       (outline(circ "1#Top" 14.330709 -80.708661 -7.874016))
       (pin "Rectangle8" "1" -88.582677 -49.212598)
@@ -287,10 +280,6 @@
       (pin "Rectangle9" "1" -37.401575 -43.307087)
       (pin "Rectangle9" "2" 37.401575 -43.307087)
       (pin "Rectangle9" "3" 0.000000 43.307087)
-    )
-    (image "TESTPOINT_ROUND_0.5MM$microbuilder"
-      (outline(circ "1#Top" 35.433071 0.000000 0.000000))
-      (pin "Round2" "P$1" 0.000000 0.000000)
     )
     (image "UG-2864HSWEG01_0.96IN_WRAPAROUND$microbuilder"
       (keepout (circ signal 23.748031 -314.960630 -214.566929))
@@ -429,15 +418,17 @@
       (shape (rect "1#Top" -15.748031 -23.622047 15.748031 23.622047))
       (attach off)
     )
+    (padstack "Octagon1" 
+      (shape (polygon "1#Top" 0 29.527559 12.230714 12.230714 29.527559 -12.230714 29.527559 -29.527559 12.230714 -29.527559 -12.230714 -12.230714 -29.527559 12.230714 -29.527559 29.527559 -12.230714 ))
+      (shape (polygon "16#Bottom" 0 29.527559 12.230714 12.230714 29.527559 -12.230714 29.527559 -29.527559 12.230714 -29.527559 -12.230714 -12.230714 -29.527559 12.230714 -29.527559 29.527559 -12.230714 ))
+      (attach off)
+    )
     (padstack "Rectangle8" 
       (shape (rect "1#Top" -37.401575 -27.559055 37.401575 27.559055))
       (attach off)
     )
     (padstack "Rectangle9" 
       (shape (rect "1#Top" -19.685039 -27.559055 19.685039 27.559055))
-      (attach off)
-    )
-    (padstack "Round2"       (shape (circle "1#Top" 19.685039 0 0))
       (attach off)
     )
     (padstack "Rectangle10" 
@@ -461,7 +452,7 @@
       (pins  "C10"-"2" "IC1"-"3" "U2"-"VBUS")
     )
     (net "GND"
-      (pins  "U$1"-"55" "U$1"-"27" "U$1"-"39" "U$1"-"12" "U3"-"30" "U3"-"29" "C5"-"2" "R1"-"2" "U3"-"10" "U3"-"12" "U3"-"11" "U3"-"1" "C3"-"2" "C4"-"2" "U1"-"3" "C6"-"2" "U$1"-"39" "U$1"-"55" "U$1"-"27" "U$1"-"12" "C7"-"2" "C8"-"2" "U$1"-"35" "C11"-"1" "C10"-"1" "S2"-"3" "S1"-"3" "U$1"-"34" "U$1"-"3" "C13"-"2" "C15"-"2" "C14"-"2" "C16"-"2" "C12"-"2" "C17"-"2" "C21"-"2" "C19"-"2" "C18"-"2" "C20"-"2" "U$1"-"32" "C9"-"1" "IC1"-"1" "U2"-"GND" "TP6"-"P$1")
+      (pins  "U$1"-"55" "U$1"-"27" "U$1"-"39" "U$1"-"12" "U3"-"30" "U3"-"29" "C5"-"2" "R1"-"2" "U3"-"10" "U3"-"12" "U3"-"11" "U3"-"1" "C3"-"2" "C4"-"2" "U1"-"3" "C6"-"2" "U$1"-"39" "U$1"-"55" "U$1"-"27" "U$1"-"12" "C7"-"2" "C8"-"2" "U$1"-"35" "C11"-"1" "C10"-"1" "S2"-"3" "S1"-"3" "U$1"-"34" "U$1"-"3" "C13"-"2" "C15"-"2" "C14"-"2" "C16"-"2" "C12"-"2" "C17"-"2" "C21"-"2" "C19"-"2" "C18"-"2" "C20"-"2" "U$1"-"32" "C9"-"1" "IC1"-"1" "U2"-"GND" "X3"-"6")
     )
     (net "N$1"
       (pins  "U3"-"19" "U$1"-"22")
@@ -503,19 +494,19 @@
       (pins  "S1"-"1" "U$1"-"28")
     )
     (net "N$16"
-      (pins  "U$1"-"51" "R4"-"1" "TP3"-"P$1")
+      (pins  "U$1"-"51" "R4"-"1" "X3"-"3")
     )
     (net "N$17"
-      (pins  "U$1"-"52" "R3"-"1" "TP2"-"P$1")
+      (pins  "U$1"-"52" "R3"-"1" "X3"-"5")
     )
     (net "N$19"
-      (pins  "U$1"-"50" "TP4"-"P$1")
+      (pins  "U$1"-"50" "X3"-"4")
     )
     (net "N$20"
-      (pins  "U$1"-"49" "TP5"-"P$1")
+      (pins  "U$1"-"49" "X3"-"1")
     )
     (net "N$21"
-      (pins  "R5"-"1" "U$1"-"38" "C9"-"2" "TP1"-"P$1")
+      (pins  "R5"-"1" "U$1"-"38" "C9"-"2" "X3"-"2")
     )
     (net "N$23"
       (pins  "C20"-"1" "U$1"-"25" "U$1"-"56" "C21"-"1" "C19"-"1" "C18"-"1")
