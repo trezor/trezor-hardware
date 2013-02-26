@@ -6,7 +6,6 @@ Product
 - 1x [LM4F] LM4F120H5QR Stellaris MCU
 - 1x [HRNG] ATSHA204 Random Number Generator
 - 1x [STBL] MCP1703 Low Dropout Voltage Regulator
-- 1x [ESDP] TPD4S012 USB ESD Protection
 - 1x [XTAL] ABMM2 16 MHz Crystal
 
 Raspberry shield
@@ -27,5 +26,4 @@ Links
 [MUSB] http://www.gme.cz/konektory-usb-micro-b/usb-konektor-esb227110100z-p832-239/
 [OLED] http://www.wide.hk/products.php?product=128X64-OLED-LED-Display-Module-SSD1306-%28White-Color%29
 [STBL] http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en530838
-[ESDP] http://www.ti.com/product/tpd4s012
 [XTAL] http://cz.farnell.com/abracon/abmm2-16-000mhz-e2-t/crystal-16mhz-18pf-smd/dp/2101343
