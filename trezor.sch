@@ -3338,18 +3338,15 @@ Source: Samtec SSW.pdf</description>
 <parts>
 <part name="U$1" library="stellaris" deviceset="LM4F120H5QR" device=""/>
 <part name="U2" library="SparkFun-Connectors" deviceset="USB-AB" device="" value="USB"/>
-<part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="U3" library="microbuilder" deviceset="DISP_OLED_UG-2864HSWEG01" device="0.96&quot;" value="DISPLAY"/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
-<part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="1uF"/>
 <part name="C2" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="1uF"/>
 <part name="C3" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="C4" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="1uF"/>
-<part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="C5" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="1uF"/>
-<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="390k/560k"/>
+<part name="C5" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="2.2uF"/>
+<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="390k"/>
 <part name="U1" library="SparkFun-DigitalIC" deviceset="ATSHA204" device="-TSU"/>
 <part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="100k"/>
 <part name="C6" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
@@ -3397,6 +3394,7 @@ Source: Samtec SSW.pdf</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="X3" library="con-samtec" deviceset="SSW-103-02-S-D" device=""/>
+<part name="GND2" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3405,16 +3403,13 @@ Source: Samtec SSW.pdf</description>
 <instances>
 <instance part="U$1" gate="G$1" x="22.86" y="60.96"/>
 <instance part="U2" gate="G$1" x="104.14" y="-30.48" rot="MR270"/>
-<instance part="GND2" gate="1" x="170.18" y="63.5" rot="R180"/>
 <instance part="U3" gate="G$1" x="132.08" y="20.32" rot="MR270"/>
-<instance part="+3V4" gate="G$1" x="116.84" y="76.2"/>
-<instance part="GND3" gate="1" x="121.92" y="50.8" rot="R180"/>
+<instance part="+3V4" gate="G$1" x="116.84" y="71.12"/>
 <instance part="GND5" gate="1" x="88.9" y="45.72"/>
 <instance part="C1" gate="G$1" x="99.06" y="55.88" rot="R180"/>
 <instance part="C2" gate="G$1" x="104.14" y="55.88" rot="R180"/>
-<instance part="C3" gate="G$1" x="111.76" y="68.58" rot="R270"/>
-<instance part="C4" gate="G$1" x="111.76" y="60.96" rot="R270"/>
-<instance part="GND6" gate="1" x="109.22" y="53.34"/>
+<instance part="C3" gate="G$1" x="121.92" y="60.96" rot="R90"/>
+<instance part="C4" gate="G$1" x="121.92" y="53.34" rot="R90"/>
 <instance part="C5" gate="G$1" x="162.56" y="58.42" rot="R180"/>
 <instance part="R1" gate="G$1" x="152.4" y="55.88" rot="R90"/>
 <instance part="U1" gate="G$1" x="22.86" y="-20.32"/>
@@ -3472,6 +3467,7 @@ Source: Samtec SSW.pdf</description>
 <instance part="X3" gate="-4" x="-55.88" y="35.56"/>
 <instance part="X3" gate="-5" x="-55.88" y="33.02"/>
 <instance part="X3" gate="-6" x="-55.88" y="30.48"/>
+<instance part="GND2" gate="1" x="175.26" y="55.88"/>
 </instances>
 <busses>
 </busses>
@@ -3479,14 +3475,19 @@ Source: Samtec SSW.pdf</description>
 <net name="+3V3" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="VDD"/>
-<wire x1="116.84" y1="45.72" x2="116.84" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="45.72" x2="116.84" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
 <pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="48.26" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="53.34" x2="116.84" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="60.96" x2="116.84" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="68.58" x2="116.84" y2="73.66" width="0.1524" layer="91"/>
-<junction x="116.84" y="68.58"/>
-<pinref part="C4" gate="G$1" pin="1"/>
 <junction x="116.84" y="60.96"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<junction x="116.84" y="53.34"/>
+<pinref part="U3" gate="G$1" pin="VBAT"/>
+<wire x1="109.22" y1="45.72" x2="109.22" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="48.26" x2="116.84" y2="48.26" width="0.1524" layer="91"/>
+<junction x="116.84" y="48.26"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -3565,46 +3566,11 @@ Source: Samtec SSW.pdf</description>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="NC(GND)@2"/>
-<wire x1="170.18" y1="45.72" x2="170.18" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="U3" gate="G$1" pin="VLSS"/>
-<wire x1="167.64" y1="45.72" x2="167.64" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="60.96" x2="170.18" y2="60.96" width="0.1524" layer="91"/>
-<junction x="170.18" y="60.96"/>
-<pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="60.96" x2="162.56" y2="60.96" width="0.1524" layer="91"/>
-<junction x="167.64" y="60.96"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="60.96" x2="152.4" y2="60.96" width="0.1524" layer="91"/>
-<junction x="162.56" y="60.96"/>
-</segment>
-<segment>
-<pinref part="U3" gate="G$1" pin="BS0"/>
-<wire x1="119.38" y1="45.72" x2="119.38" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="48.26" x2="121.92" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="BS2"/>
-<wire x1="121.92" y1="48.26" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="48.26" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="BS1"/>
-<wire x1="121.92" y1="45.72" x2="121.92" y2="48.26" width="0.1524" layer="91"/>
-<junction x="121.92" y="48.26"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="U3" gate="G$1" pin="NC(GND)@1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="96.52" y1="45.72" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="50.8" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="109.22" y1="68.58" x2="109.22" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="60.96" x2="109.22" y2="55.88" width="0.1524" layer="91"/>
-<junction x="109.22" y="60.96"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
@@ -3729,13 +3695,49 @@ Source: Samtec SSW.pdf</description>
 <wire x1="-53.34" y1="30.48" x2="-43.18" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="-43.18" y1="30.48" x2="-43.18" y2="27.94" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="175.26" y1="58.42" x2="175.26" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="NC(GND)@2"/>
+<wire x1="170.18" y1="45.72" x2="170.18" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="VLSS"/>
+<wire x1="167.64" y1="45.72" x2="167.64" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="60.96" x2="170.18" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="60.96" x2="162.56" y2="60.96" width="0.1524" layer="91"/>
+<junction x="167.64" y="60.96"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="60.96" x2="152.4" y2="60.96" width="0.1524" layer="91"/>
+<junction x="162.56" y="60.96"/>
+<pinref part="U3" gate="G$1" pin="BS2"/>
+<wire x1="121.92" y1="48.26" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="48.26" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="48.26" x2="147.32" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="48.26" x2="147.32" y2="60.96" width="0.1524" layer="91"/>
+<junction x="124.46" y="48.26"/>
+<wire x1="147.32" y1="60.96" x2="152.4" y2="60.96" width="0.1524" layer="91"/>
+<junction x="152.4" y="60.96"/>
+<pinref part="U3" gate="G$1" pin="BS1"/>
+<wire x1="121.92" y1="45.72" x2="121.92" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="BS0"/>
+<wire x1="119.38" y1="45.72" x2="119.38" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="48.26" x2="121.92" y2="48.26" width="0.1524" layer="91"/>
+<junction x="121.92" y="48.26"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="60.96" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="48.26" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
+<junction x="124.46" y="53.34"/>
+<wire x1="175.26" y1="60.96" x2="170.18" y2="60.96" width="0.1524" layer="91"/>
+<junction x="170.18" y="60.96"/>
+</segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="/RES"/>
-<wire x1="129.54" y1="45.72" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="60.96" x2="86.36" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="86.36" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="45.72" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="60.96" x2="86.36" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="76.2" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PE1"/>
 <wire x1="86.36" y1="60.96" x2="45.72" y2="60.96" width="0.1524" layer="91"/>
 </segment>
@@ -3763,9 +3765,9 @@ Source: Samtec SSW.pdf</description>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="DC/I2C_SA0"/>
-<wire x1="132.08" y1="45.72" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="63.5" x2="83.82" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="88.9" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="45.72" x2="132.08" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="63.5" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="78.74" x2="132.08" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="63.5" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="63.5" x2="55.88" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PE2"/>
@@ -3822,9 +3824,9 @@ Source: Samtec SSW.pdf</description>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="/CS"/>
-<wire x1="127" y1="45.72" x2="127" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="58.42" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="83.82" x2="127" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="127" y1="45.72" x2="127" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="58.42" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="73.66" x2="127" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="58.42" x2="58.42" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="58.42" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
