@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2455,6 +2455,14 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="204,1,12.7,-27.94,U1,VSS,,,,"/>
+<approved hash="104,1,15.24,-27.94,U1,VDD,+3V3,,,"/>
+<approved hash="202,1,33.02,-27.94,U1,R/W,,,,"/>
+<approved hash="202,1,35.56,-27.94,U1,E/RD,,,,"/>
+<approved hash="204,1,63.5,-27.94,U1,VCC,,,,"/>
+<approved hash="104,1,66.04,-27.94,U1,VLSS,GND,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
