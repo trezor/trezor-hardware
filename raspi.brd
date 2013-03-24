@@ -124,10 +124,10 @@
 <wire x1="0" y1="1.27" x2="53.34" y2="1.27" width="0" layer="20"/>
 <wire x1="53.34" y1="1.27" x2="53.34" y2="42.5704" width="0" layer="20"/>
 <wire x1="53.34" y1="42.5704" x2="39.37" y2="42.5704" width="0" layer="20"/>
-<wire x1="39.37" y1="42.5704" x2="39.37" y2="56.505" width="0" layer="20"/>
-<wire x1="39.37" y1="56.505" x2="0" y2="56.505" width="0" layer="20"/>
-<wire x1="0" y1="56.505" x2="0" y2="1.27" width="0" layer="20"/>
-<polygon width="0" layer="51">
+<wire x1="39.37" y1="42.5704" x2="39.37" y2="56.0986" width="0" layer="20"/>
+<wire x1="39.37" y1="56.0986" x2="0" y2="56.0986" width="0" layer="20"/>
+<wire x1="0" y1="56.0986" x2="0" y2="1.27" width="0" layer="20"/>
+<polygon width="0" layer="112">
 <vertex x="6.0325" y="20.10448125"/>
 <vertex x="5.2712625" y="20.10448125"/>
 <vertex x="5.2712625" y="19.726784375"/>
@@ -151,7 +151,7 @@
 <vertex x="5.954775" y="19.148934375"/>
 <vertex x="6.0325" y="19.593434375"/>
 </polygon>
-<polygon width="0" layer="51">
+<polygon width="0" layer="112">
 <vertex x="6.0325" y="20.10448125"/>
 <vertex x="6.0325" y="21.13241875"/>
 <vertex x="3.154425" y="21.13241875"/>
@@ -163,7 +163,7 @@
 <vertex x="5.2712625" y="20.260184375"/>
 <vertex x="5.2712625" y="20.10448125"/>
 </polygon>
-<polygon width="0" layer="51">
+<polygon width="0" layer="112">
 <vertex x="6.0825375" y="22.91041875"/>
 <vertex x="5.310378125" y="22.91041875"/>
 <vertex x="5.254753125" y="22.627209375"/>
@@ -191,7 +191,7 @@
 <vertex x="5.971540625" y="22.28811875"/>
 <vertex x="6.054853125" y="22.588346875"/>
 </polygon>
-<polygon width="0" layer="51">
+<polygon width="0" layer="112">
 <vertex x="6.0825375" y="22.91041875"/>
 <vertex x="6.054853125" y="23.238334375"/>
 <vertex x="5.971540625" y="23.53271875"/>
@@ -219,7 +219,7 @@
 <vertex x="5.254753125" y="23.199471875"/>
 <vertex x="5.310378125" y="22.91041875"/>
 </polygon>
-<polygon width="0" layer="51">
+<polygon width="0" layer="112">
 <vertex x="3.1518875" y="26.853515625"/>
 <vertex x="3.843275" y="26.853515625"/>
 <vertex x="5.273803125" y="25.755728125"/>
@@ -231,7 +231,7 @@
 <vertex x="3.9123625" y="24.571834375"/>
 <vertex x="3.1518875" y="24.571834375"/>
 </polygon>
-<polygon width="0" layer="51">
+<polygon width="0" layer="112">
 <vertex x="3.1518875" y="29.2434"/>
 <vertex x="6.034278125" y="29.2434"/>
 <vertex x="6.034278125" y="27.0564625"/>
@@ -245,7 +245,7 @@
 <vertex x="3.9123625" y="27.0564625"/>
 <vertex x="3.1518875" y="27.0564625"/>
 </polygon>
-<polygon width="0" layer="51">
+<polygon width="0" layer="112">
 <vertex x="6.0325" y="31.03918125"/>
 <vertex x="5.2712625" y="31.03918125"/>
 <vertex x="5.2712625" y="30.661484375"/>
@@ -269,7 +269,7 @@
 <vertex x="5.954775" y="30.07804375"/>
 <vertex x="6.0325" y="30.528134375"/>
 </polygon>
-<polygon width="0" layer="51">
+<polygon width="0" layer="112">
 <vertex x="6.0325" y="31.03918125"/>
 <vertex x="6.0325" y="32.06711875"/>
 <vertex x="3.154425" y="32.06711875"/>
@@ -281,7 +281,7 @@
 <vertex x="5.2712625" y="31.194884375"/>
 <vertex x="5.2712625" y="31.03918125"/>
 </polygon>
-<polygon width="0" layer="51">
+<polygon width="0" layer="112">
 <vertex x="3.1518875" y="33.910396875"/>
 <vertex x="5.273803125" y="33.910396875"/>
 <vertex x="5.273803125" y="34.68408125"/>
@@ -291,7 +291,7 @@
 <vertex x="5.273803125" y="33.0374"/>
 <vertex x="3.1518875" y="33.0374"/>
 </polygon>
-<polygon width="0" layer="51">
+<polygon width="0" layer="112">
 <vertex x="20.8732125" y="26.77756875"/>
 <vertex x="19.4564" y="26.77756875"/>
 <vertex x="19.4619875" y="26.72753125"/>
@@ -329,7 +329,7 @@
 <vertex x="20.812253125" y="26.03309375"/>
 <vertex x="20.8788" y="26.72753125"/>
 </polygon>
-<polygon width="0" layer="51">
+<polygon width="0" layer="112">
 <vertex x="20.8732125" y="26.77756875"/>
 <vertex x="20.812253125" y="27.416634375"/>
 <vertex x="20.6121" y="28.06661875"/>
@@ -365,7 +365,7 @@
 <vertex x="19.423125" y="27.13316875"/>
 <vertex x="19.4564" y="26.77756875"/>
 </polygon>
-<text x="28.6512" y="3.4544" size="1.6764" layer="51" font="vector" ratio="12">bitcointrezor.com</text>
+<text x="28.6512" y="3.4544" size="1.6764" layer="112" font="vector" ratio="12">bitcointrezor.com</text>
 </plain>
 <libraries>
 <library name="RaspberryPi">
