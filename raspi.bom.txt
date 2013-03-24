@@ -18,5 +18,8 @@ Raspberry shield
 - 1x SiLabs CP2110 HID-232 converter
   * http://www.silabs.com/products/interface/usbtouart/Pages/usb-to-uart-bridge.aspx
 
+- 1x 2x13 Pinheader
+  * http://www.gme.cz/dutinkove-listy/dutinkova-lista-bl826gd-p832-240/
+
 - 1x OLED display 128x64 UG-2864HSWEG01
   * http://www.wide.hk/products.php?product=128X64-OLED-LED-Display-Module-SSD1306-%28White-Color%29
