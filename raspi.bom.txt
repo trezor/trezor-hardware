@@ -1,0 +1,22 @@
+Raspberry shield
+================
+
+- 5x SMD 0805 Capacitor 1uF - C1, C2, C4, C6, C7
+- 2x SMD 0805 Capacitor 0.1uF - C3, C8
+- 1x SMD 0805 Capacitor 2.2uF - C5
+- 1x SMD 0805 Capacitor 4.7uF - C9
+
+- 1x SMD 0805 Resistor 390k - R1
+- 1x SMD 0805 Resistor 4k7 - R2
+
+- 2x Microbuton P-B17310
+  * http://www.gme.cz/mikrospinace-do-dps/p-b17310-p630-143/
+
+- 1x Micro USB (type B) Receptacle Bottom
+  * http://cz.farnell.com/molex/47346-0001/micro-usb-type-b-receptacle-bottom/dp/1568026
+
+- 1x SiLabs CP2110 HID-232 converter
+  * http://www.silabs.com/products/interface/usbtouart/Pages/usb-to-uart-bridge.aspx
+
+- 1x OLED display 128x64 UG-2864HSWEG01
+  * http://www.wide.hk/products.php?product=128X64-OLED-LED-Display-Module-SSD1306-%28White-Color%29

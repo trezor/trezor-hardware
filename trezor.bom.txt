@@ -1,0 +1,23 @@
+Trezor
+======
+
+- 1x OLED display 128x64 UG-2864HSWEG01
+  * http://www.wide.hk/products.php?product=128X64-OLED-LED-Display-Module-SSD1306-%28White-Color%29
+
+- 2x Microbuton P-B17310
+  * http://www.gme.cz/mikrospinace-do-dps/p-b17310-p630-143/
+
+- 1x Micro USB (type B) Receptacle Top
+  * http://www.gme.cz/konektory-usb-micro-b/usb-konektor-esb227110100z-p832-239/
+
+- 1x LM4F120H5QR Stellaris MCU
+  * http://www.ti.com/product/lm4f120h5qr
+
+- 1x ATSHA204 Random Number Generator
+  * http://www.atmel.com/devices/atsha204.aspx
+
+- 1x MCP1703 Low Dropout Voltage Regulator
+  * http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en530838
+
+- 1x ABMM2 16 MHz Crystal
+  * http://cz.farnell.com/abracon/abmm2-16-000mhz-e2-t/crystal-16mhz-18pf-smd/dp/2101343
