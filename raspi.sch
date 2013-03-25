@@ -841,6 +841,17 @@ We've spent an enormous amount of time creating and checking these footprints an
 <circle x="-2.5" y="0" radius="0.889" width="0" layer="30"/>
 <circle x="3.5" y="2.5" radius="1.143" width="0" layer="30"/>
 </package>
+<package name="TACTILE_SWITCH_SMD-3">
+<wire x1="-2.04" y1="-0.44" x2="-2.04" y2="0.47" width="0.2032" layer="21"/>
+<wire x1="-1.04" y1="1.14" x2="1.04" y2="1.14" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="0.8" width="0.15" layer="21"/>
+<smd name="1" x="-1.8" y="1.1" dx="0.8" dy="1" layer="1" rot="R90"/>
+<smd name="2" x="1.8" y="1.1" dx="0.8" dy="1" layer="1" rot="R90"/>
+<smd name="3" x="-1.8" y="-1.1" dx="0.8" dy="1" layer="1" rot="R90"/>
+<smd name="4" x="1.8" y="-1.1" dx="0.8" dy="1" layer="1" rot="R90"/>
+<wire x1="2.06" y1="-0.44" x2="2.06" y2="0.47" width="0.2032" layer="21"/>
+<wire x1="-1.04" y1="-1.16" x2="1.04" y2="-1.16" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCH-MOMENTARY-2">
@@ -937,6 +948,15 @@ We've spent an enormous amount of time creating and checking these footprints an
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD-3" package="TACTILE_SWITCH_SMD-3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2027,8 +2047,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="USB" library="fabhack" deviceset="47346-0001" device=""/>
 <part name="U1" library="microbuilder" deviceset="DISP_OLED_UG-2864HSWEG01" device="0.96&quot;" value="DISPLAY"/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
-<part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="" value="SWITCH-MOMENTARY-2"/>
-<part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="" value="SWITCH-MOMENTARY-2"/>
+<part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD" value="SWITCH-MOMENTARY-2SMD"/>
+<part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD" value="SWITCH-MOMENTARY-2SMD"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
