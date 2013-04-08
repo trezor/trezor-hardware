@@ -11,10 +11,10 @@ UsedLibrary="/home/stick/Applications/eagle-6.4.0/lbr/fabhack-eagle/fabhack.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="340 143 1182 752"
+Loc="0 51 599 450"
 State=1
 Number=0
 
 [Desktop]
-Screen="1400 1050"
+Screen="1920 1200"
 Window="Win_1"
