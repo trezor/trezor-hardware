@@ -201,6 +201,7 @@
 <wire x1="4.8006" y1="20.1676" x2="5.334" y2="19.9136" width="0.0254" layer="20"/>
 <wire x1="5.334" y1="19.9136" x2="5.9182" y2="19.8882" width="0.0254" layer="20"/>
 <wire x1="5.9182" y1="19.8882" x2="6.477" y2="20.0914" width="0.0254" layer="20"/>
+<text x="36.1696" y="13.5636" size="1.6764" layer="122" font="vector" ratio="12" rot="MR270" align="center">bitcointrezor.com</text>
 </plain>
 <libraries>
 <library name="microbuilder">
@@ -1040,10 +1041,10 @@ design rules under a new name.</description>
 <contactref element="U3" pad="3"/>
 <contactref element="C1" pad="2"/>
 <wire x1="47.1424" y1="3.4916" x2="46.3883" y2="3.4916" width="0.2032" layer="1"/>
-<wire x1="44.148" y1="4.6104" x2="45.2695" y2="4.6104" width="0.2032" layer="1"/>
+<wire x1="44.3512" y1="4.6104" x2="45.2695" y2="4.6104" width="0.2032" layer="1"/>
 <wire x1="45.2695" y1="4.6104" x2="46.3883" y2="3.4916" width="0.2032" layer="1"/>
-<via x="44.148" y="4.6104" extent="1-16" drill="0.4064" diameter="0.8128"/>
-<wire x1="42.4496" y1="4.6104" x2="44.148" y2="4.6104" width="0.2032" layer="16"/>
+<via x="44.3512" y="4.6104" extent="1-16" drill="0.4064" diameter="0.8128"/>
+<wire x1="42.4496" y1="4.6104" x2="44.3512" y2="4.6104" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$13">
 <contactref element="U3" pad="5"/>
