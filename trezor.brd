@@ -201,7 +201,6 @@
 <wire x1="4.8006" y1="20.1676" x2="5.334" y2="19.9136" width="0.0254" layer="20"/>
 <wire x1="5.334" y1="19.9136" x2="5.9182" y2="19.8882" width="0.0254" layer="20"/>
 <wire x1="5.9182" y1="19.8882" x2="6.477" y2="20.0914" width="0.0254" layer="20"/>
-<text x="36.1696" y="13.5636" size="1.6764" layer="122" font="vector" ratio="12" rot="MR270" align="center">bitcointrezor.com</text>
 </plain>
 <libraries>
 <library name="microbuilder">
@@ -860,11 +859,11 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="3"/>
 <via x="40.0304" y="10.16" extent="1-16" drill="0.4064"/>
 <via x="45.5168" y="24.9936" extent="1-16" drill="0.4064"/>
-<via x="40.4368" y="23.1648" extent="1-16" drill="0.4064"/>
+<via x="42.4688" y="24.7904" extent="1-16" drill="0.4064"/>
 <via x="45.5168" y="16.6624" extent="1-16" drill="0.4064"/>
 <via x="45.72" y="12.192" extent="1-16" drill="0.4064"/>
 <via x="12.192" y="22.1488" extent="1-16" drill="0.4064"/>
-<via x="22.9616" y="23.7744" extent="1-16" drill="0.4064"/>
+<via x="23.1648" y="23.5712" extent="1-16" drill="0.4064"/>
 <via x="16.8656" y="23.368" extent="1-16" drill="0.4064"/>
 <via x="9.5504" y="20.1168" extent="1-16" drill="0.4064"/>
 <via x="2.8448" y="18.288" extent="1-16" drill="0.4064"/>
@@ -887,11 +886,12 @@ design rules under a new name.</description>
 <wire x1="20.522271875" y1="10.567328125" x2="21.0312" y2="10.0584" width="0.2032" layer="1"/>
 <wire x1="21.0312" y1="10.0584" x2="21.844" y2="10.0584" width="0.2032" layer="1"/>
 <wire x1="21.844" y1="10.0584" x2="22.1488" y2="10.3632" width="0.2032" layer="1"/>
-<via x="32.3088" y="25.1968" extent="1-16" drill="0.4064"/>
-<via x="32.3088" y="1.6256" extent="1-16" drill="0.4064"/>
+<via x="32.3088" y="24.7904" extent="1-16" drill="0.4064"/>
+<via x="32.3088" y="2.032" extent="1-16" drill="0.4064"/>
 <via x="25.4" y="1.4224" extent="1-16" drill="0.4064"/>
 <via x="21.7424" y="5.8928" extent="1-16" drill="0.4064"/>
 <via x="3.6576" y="8.9408" extent="1-16" drill="0.4064"/>
+<via x="42.4688" y="2.032" extent="1-16" drill="0.4064"/>
 </signal>
 <signal name="VSS">
 <contactref element="U3" pad="8"/>
