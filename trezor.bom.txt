@@ -8,14 +8,14 @@ Trezor
 
 - 1x SMD 0603 Resistor 390k - R1
 
-- 1x OLED display 128x64 UG-2864HSWEG01
-  * http://www.wide.hk/products.php?product=128X64-OLED-LED-Display-Module-SSD1306-%28White-Color%29
-
 - 2x Microbuton P-B17310
   * http://www.gme.cz/mikrospinace-do-dps/p-b17310-p630-143/
 
-- 1x Micro USB (type B) Receptacle Top
-  * http://www.gme.cz/konektory-usb-micro-b/usb-konektor-esb227110100z-p832-239/
+- 1x Micro USB (type B) Receptacle Bottom
+  * http://cz.farnell.com/molex/47346-0001/micro-usb-type-b-receptacle-bottom/dp/1568026
+
+- 1x OLED display 128x64 UG-2864HSWEG01
+  * http://www.wide.hk/products.php?product=128X64-OLED-LED-Display-Module-SSD1306-%28White-Color%29
 
 - 1x STM32F205RE
   * http://www.st.com/web/catalog/mmc/FM141/SC1169/SS1575/LN1433/PF245096
