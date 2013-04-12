@@ -3164,11 +3164,11 @@ Miniature connector for MCU programming.</description>
 <part name="C11" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="1uF"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="C13" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
-<part name="C12" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
-<part name="C15" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
-<part name="C16" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
-<part name="C14" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
+<part name="C13" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
+<part name="C12" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
+<part name="C15" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
+<part name="C16" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
+<part name="C14" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
 <part name="C17" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="2.2uF"/>
 <part name="IC1" library="linear" deviceset="MCP1703" device="CB"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>

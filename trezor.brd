@@ -798,11 +798,11 @@ design rules under a new name.</description>
 <element name="C8" library="SparkFun-Passives" package="0603-CAP" value="22pF" x="13.0048" y="3.6576" rot="R90"/>
 <element name="C10" library="SparkFun-Passives" package="0603-CAP" value="1uF" x="5.08" y="18.288"/>
 <element name="C11" library="SparkFun-Passives" package="0603-CAP" value="1uF" x="10.668" y="6.5024" rot="R270"/>
-<element name="C13" library="SparkFun-Passives" package="0603-CAP" value="100nF" x="6.9088" y="12.3952" rot="R270"/>
-<element name="C12" library="SparkFun-Passives" package="0603-CAP" value="100nF" x="25.6032" y="13.3604" rot="R270"/>
-<element name="C15" library="SparkFun-Passives" package="0603-CAP" value="100nF" x="24.1808" y="10.5664"/>
-<element name="C16" library="SparkFun-Passives" package="0603-CAP" value="100nF" x="13.6144" y="23.7744"/>
-<element name="C14" library="SparkFun-Passives" package="0603-CAP" value="100nF" x="14.4272" y="21.7424"/>
+<element name="C13" library="SparkFun-Passives" package="0603-CAP" value="0.1uF" x="6.9088" y="12.3952" rot="R270"/>
+<element name="C12" library="SparkFun-Passives" package="0603-CAP" value="0.1uF" x="25.6032" y="13.3604" rot="R270"/>
+<element name="C15" library="SparkFun-Passives" package="0603-CAP" value="0.1uF" x="24.1808" y="10.5664"/>
+<element name="C16" library="SparkFun-Passives" package="0603-CAP" value="0.1uF" x="13.6144" y="23.7744"/>
+<element name="C14" library="SparkFun-Passives" package="0603-CAP" value="0.1uF" x="14.4272" y="21.7424"/>
 <element name="C17" library="SparkFun-Passives" package="0603-CAP" value="2.2uF" x="23.5712" y="13.3604" rot="R270"/>
 <element name="IC1" library="linear" package="SOT23" value="MCP1703CB" x="7.112" y="8.7376" rot="R90"/>
 <element name="U1" library="stm32" package="TQFP64" value="STM32F205RET6" x="15.24" y="13.3604" rot="R135"/>
