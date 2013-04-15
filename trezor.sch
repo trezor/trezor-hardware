@@ -3190,6 +3190,7 @@ Miniature connector for MCU programming.</description>
 <part name="U$1" library="fabhack" deviceset="PROGRAMMER" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
+<part name="P+3" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3254,6 +3255,7 @@ Miniature connector for MCU programming.</description>
 <instance part="GND10" gate="1" x="93.98" y="121.92"/>
 <instance part="+3V6" gate="G$1" x="83.82" y="134.62"/>
 <instance part="U1" gate="PORTC_L" x="132.08" y="132.08" rot="R180"/>
+<instance part="P+3" gate="1" x="20.32" y="132.08"/>
 </instances>
 <busses>
 </busses>
@@ -3583,6 +3585,12 @@ Miniature connector for MCU programming.</description>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="45.72" y1="124.46" x2="43.18" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="124.46" x2="43.18" y2="127" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="PORTA_H" pin="PA9"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+<wire x1="15.24" y1="127" x2="20.32" y2="127" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="127" x2="20.32" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="XTAL1" class="0">
