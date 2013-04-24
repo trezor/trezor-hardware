@@ -123,53 +123,57 @@
 <libraries>
 <library name="fabhack">
 <packages>
-<package name="SWD">
+<package name="PROGRAMMER">
 <pad name="1" x="0" y="0" drill="0.7" shape="square"/>
 <pad name="2" x="1.5875" y="0" drill="0.7"/>
 <pad name="3" x="3.175" y="0" drill="0.7"/>
 <pad name="4" x="4.7625" y="0" drill="0.7"/>
 <pad name="5" x="6.35" y="0" drill="0.7"/>
 <pad name="6" x="7.9375" y="0" drill="0.7"/>
+<pad name="7" x="9.525" y="0" drill="0.7"/>
 </package>
 </packages>
 <symbols>
-<symbol name="SWD">
-<wire x1="-3.81" y1="7.62" x2="7.62" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="2.54" x2="-2.54" y2="2.54" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="-7.62" x2="-2.54" y2="-7.62" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="5.08" x2="-2.54" y2="5.08" width="0.6096" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="-3.81" y1="7.62" x2="-3.81" y2="-10.16" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="-3.81" y2="-10.16" width="0.4064" layer="94"/>
+<symbol name="PROGRAMMER">
+<wire x1="-3.81" y1="7.62" x2="5.08" y2="7.62" width="0.4064" layer="94"/>
 <wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-2.54" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="5.08" x2="-2.54" y2="5.08" width="0.6096" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="5.08" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="7.62" x2="-3.81" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="-3.81" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="-5.08" x2="-2.54" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="-2.54" y2="-2.54" width="0.6096" layer="94"/>
 <text x="6.096" y="10.414" size="1.778" layer="96" rot="R180">&gt;VALUE</text>
 <text x="5.08" y="-13.462" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<pin name="VDD" x="-7.62" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1"/>
-<pin name="GND" x="-7.62" y="2.54" visible="pin" length="middle" direction="pas" swaplevel="1"/>
-<pin name="SWO" x="-7.62" y="0" visible="pin" length="middle" direction="pas" swaplevel="1"/>
-<pin name="SWCLK" x="-7.62" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1"/>
-<pin name="SWDIO" x="-7.62" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1"/>
-<wire x1="-1.27" y1="-2.54" x2="-2.54" y2="-2.54" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="-5.08" x2="-2.54" y2="-5.08" width="0.6096" layer="94"/>
+<pin name="VDD" x="-7.62" y="2.54" visible="pin" length="middle" direction="pas" swaplevel="1"/>
+<pin name="GND" x="-7.62" y="0" visible="pin" length="middle" direction="pas" swaplevel="1"/>
+<pin name="TDO" x="-7.62" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1"/>
+<pin name="TDI" x="-7.62" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1"/>
+<pin name="TCK" x="-7.62" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1"/>
+<pin name="TMS" x="-7.62" y="-10.16" visible="pin" length="middle" direction="pas" swaplevel="1"/>
+<wire x1="-1.27" y1="-7.62" x2="-2.54" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="-10.16" x2="-2.54" y2="-10.16" width="0.6096" layer="94"/>
 <pin name="RST" x="-7.62" y="5.08" visible="pin" length="middle" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SWD">
-<description>&lt;b&gt;SWD&lt;/b&gt;
-Miniature connector for ARM programming.</description>
+<deviceset name="PROGRAMMER">
+<description>&lt;b&gt;PROGRAMMER&lt;/b&gt;
+Miniature connector for MCU programming.</description>
 <gates>
-<gate name="G$1" symbol="SWD" x="0" y="0"/>
+<gate name="G$1" symbol="PROGRAMMER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SWD">
+<device name="" package="PROGRAMMER">
 <connects>
-<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
 <connect gate="G$1" pin="RST" pad="1"/>
-<connect gate="G$1" pin="SWCLK" pad="4"/>
-<connect gate="G$1" pin="SWDIO" pad="5"/>
-<connect gate="G$1" pin="SWO" pad="3"/>
-<connect gate="G$1" pin="VDD" pad="6"/>
+<connect gate="G$1" pin="TCK" pad="6"/>
+<connect gate="G$1" pin="TDI" pad="5"/>
+<connect gate="G$1" pin="TDO" pad="4"/>
+<connect gate="G$1" pin="TMS" pad="7"/>
+<connect gate="G$1" pin="VDD" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -563,6 +567,7 @@ Miniature connector for ARM programming.</description>
 </class>
 </classes>
 <parts>
+<part name="U$2" library="fabhack" deviceset="PROGRAMMER" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-2X10" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -570,26 +575,31 @@ Miniature connector for ARM programming.</description>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="U$1" library="fabhack" deviceset="SWD" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
+<instance part="U$2" gate="G$1" x="5.08" y="12.7" rot="R180"/>
 <instance part="JP1" gate="A" x="83.82" y="17.78"/>
-<instance part="P+1" gate="VCC" x="60.96" y="38.1"/>
-<instance part="GND1" gate="1" x="60.96" y="-2.54"/>
+<instance part="P+1" gate="VCC" x="15.24" y="38.1"/>
+<instance part="GND1" gate="1" x="17.78" y="0"/>
 <instance part="P+2" gate="VCC" x="73.66" y="38.1"/>
 <instance part="P+3" gate="VCC" x="96.52" y="38.1"/>
 <instance part="GND2" gate="1" x="73.66" y="-2.54"/>
 <instance part="GND3" gate="1" x="96.52" y="-2.54"/>
-<instance part="U$1" gate="G$1" x="50.8" y="12.7" rot="R180"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="VCC" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="VDD"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<wire x1="12.7" y1="10.16" x2="15.24" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="10.16" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
+</segment>
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
@@ -602,14 +612,14 @@ Miniature connector for ARM programming.</description>
 <wire x1="88.9" y1="27.94" x2="96.52" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="27.94" x2="96.52" y2="35.56" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="VDD"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="58.42" y1="20.32" x2="60.96" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="20.32" x2="60.96" y2="35.56" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="GND" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="12.7" y1="12.7" x2="17.78" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="12.7" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
+</segment>
 <segment>
 <pinref part="JP1" gate="A" pin="3"/>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -658,45 +668,41 @@ Miniature connector for ARM programming.</description>
 <wire x1="88.9" y1="5.08" x2="96.52" y2="5.08" width="0.1524" layer="91"/>
 <junction x="96.52" y="5.08"/>
 </segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="58.42" y1="10.16" x2="60.96" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="10.16" x2="60.96" y2="0" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="7"/>
-<wire x1="81.28" y1="20.32" x2="66.04" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="20.32" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="SWDIO"/>
-<wire x1="66.04" y1="17.78" x2="58.42" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="20.32" x2="43.18" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="20.32" x2="43.18" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="TMS"/>
+<wire x1="43.18" y1="22.86" x2="12.7" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="9"/>
-<wire x1="81.28" y1="17.78" x2="68.58" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="17.78" x2="68.58" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="SWCLK"/>
-<wire x1="68.58" y1="15.24" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="17.78" x2="40.64" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="TCK"/>
+<wire x1="40.64" y1="17.78" x2="40.64" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="20.32" x2="12.7" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="13"/>
-<wire x1="81.28" y1="12.7" x2="58.42" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="SWO"/>
+<wire x1="81.28" y1="12.7" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="12.7" x2="40.64" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="TDO"/>
+<wire x1="40.64" y1="15.24" x2="12.7" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="15"/>
-<wire x1="81.28" y1="10.16" x2="68.58" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="10.16" x2="68.58" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="RST"/>
-<wire x1="68.58" y1="7.62" x2="58.42" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="10.16" x2="40.64" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="10.16" x2="40.64" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="RST"/>
+<wire x1="40.64" y1="7.62" x2="12.7" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
