@@ -19,9 +19,11 @@ Trezor
 
 - 1x STM32F205RE
   * http://www.st.com/web/catalog/mmc/FM141/SC1169/SS1575/LN1433/PF245096
+  * http://cz.farnell.com/stmicroelectronics/stm32f205ret6/ic-mcu-32bit-arm-64-lqfp/dp/2060897
 
 - 1x MCP1703 Low Dropout Voltage Regulator
   * http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en530838
+  * http://cz.farnell.com/microchip/mcp1703t-3302e-cb/v-reg-ldo-250ma-3-3v-sot-23a-3/dp/1439518
 
 - 1x ABMM2 16 MHz Crystal
   * http://cz.farnell.com/abracon/abmm2-16-000mhz-e2-t/crystal-16mhz-18pf-smd/dp/2101343
