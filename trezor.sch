@@ -3150,7 +3150,7 @@ Miniature connector for ARM programming.</description>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="390k"/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD"/>
 <part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD"/>
-<part name="Q2" library="crystal" deviceset="CRYSTAL" device="CTS406" value="16MHz"/>
+<part name="Q2" library="crystal" deviceset="CRYSTAL" device="CTS406" value="8MHz"/>
 <part name="C9" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="22pF"/>
 <part name="C8" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="22pF"/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>

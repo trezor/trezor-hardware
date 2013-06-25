@@ -25,5 +25,5 @@ Trezor
   * http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en530838
   * http://cz.farnell.com/microchip/mcp1703t-3302e-cb/v-reg-ldo-250ma-3-3v-sot-23a-3/dp/1439518
 
-- 1x ABMM2 16 MHz Crystal
-  * http://cz.farnell.com/abracon/abmm2-16-000mhz-e2-t/crystal-16mhz-18pf-smd/dp/2101343
+- 1x ABMM2 8 MHz Crystal
+  * http://cz.farnell.com/abracon/abmm2-8-000mhz-e2-t/crystal-8m-18pf-cl-6x3-6mm-smt/dp/1611803
