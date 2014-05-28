@@ -3,7 +3,8 @@ Trezor
 
 - 5x SMD 0603 Capacitor 1uF - C1, C2, C4, C10, C11
 - 7x SMD 0603 Capacitor 0.1uF - C3, C12, C13, C14, C15, C16, C18
-- 4x SMD 0603 Capacitor 2.2uF - C5, C6, C7, C17
+- 3x SMD 0603 Capacitor 2.2uF - C6, C7, C17
+- 1x SMD 0603 Capacitor 4.7uF - C5
 - 2x SMD 0603 Capacitor 22pF - C8, C9
 
 - 1x SMD 0603 Resistor 390k - R1
