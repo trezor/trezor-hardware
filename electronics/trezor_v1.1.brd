@@ -347,15 +347,6 @@
 <text x="-15.0968" y="-2.1416" size="1.77" layer="47">0.00 mm</text>
 <wire x1="62.3" y1="0" x2="62.3" y2="26.7" width="0.2" layer="47"/>
 <wire x1="-18.14" y1="0" x2="-18.14" y2="26.64" width="0.2" layer="47"/>
-<text x="68.4784" y="-76.5048" size="1.778" layer="48">Krelina</text>
-<text x="68.4784" y="-58.4708" size="1.778" layer="48">TREZOR</text>
-<text x="65.6336" y="-68.834" size="1.778" layer="48">1.00</text>
-<text x="-83.4136" y="-57.4548" size="1.524" layer="48">49.99x26.70 mm</text>
-<text x="-76.5556" y="-61.2648" size="1.524" layer="48">±0,2mm</text>
-<text x="-80.8736" y="-64.5668" size="1.524" layer="48">1,5mm / 35µm</text>
-<text x="-73.7616" y="-68.8848" size="1.524" layer="48">FR4</text>
-<text x="-78.3336" y="-72.6948" size="1.524" layer="48">Galv. Au</text>
-<text x="-78.3336" y="-76.5048" size="1.524" layer="48">frézovat</text>
 <wire x1="-60.5536" y1="-80.1878" x2="-58.5216" y2="-80.1878" width="0.0762" layer="144"/>
 <wire x1="-59.5376" y1="-79.1718" x2="-59.5376" y2="-81.2038" width="0.0762" layer="144"/>
 <text x="-55.7276" y="-80.8228" size="1.27" layer="144">0.4000 mm / 15.748 mil </text>
@@ -815,115 +806,6 @@ reflow soldering</description>
 <smd name="1" x="0" y="0" dx="1.25" dy="1.25" layer="1" roundness="100" cream="no"/>
 <text x="-3.175" y="1.5875" size="1.27" layer="37">&gt;NAME</text>
 </package>
-<package name="RAM_BRD">
-<description>Vyber nejpouzivanejsich soucastek</description>
-<wire x1="0" y1="0" x2="281.94" y2="0" width="0.1524" layer="48"/>
-<wire x1="281.94" y1="0" x2="281.94" y2="185.42" width="0.1524" layer="48"/>
-<wire x1="281.94" y1="185.42" x2="281.94" y2="193.04" width="0.1524" layer="48"/>
-<wire x1="0" y1="193.04" x2="0" y2="185.42" width="0.1524" layer="48"/>
-<wire x1="0" y1="185.42" x2="0" y2="0" width="0.1524" layer="48"/>
-<wire x1="281.94" y1="193.04" x2="0" y2="193.04" width="0.1524" layer="48"/>
-<wire x1="0" y1="185.42" x2="281.94" y2="185.42" width="0.1524" layer="48"/>
-<wire x1="1.27" y1="16.51" x2="1.27" y2="12.7" width="0.1524" layer="48"/>
-<wire x1="1.27" y1="12.7" x2="1.27" y2="8.89" width="0.1524" layer="48"/>
-<wire x1="1.27" y1="8.89" x2="1.27" y2="5.08" width="0.1524" layer="48"/>
-<wire x1="1.27" y1="5.08" x2="1.27" y2="1.27" width="0.1524" layer="48"/>
-<wire x1="160.02" y1="5.08" x2="160.02" y2="9.144" width="0.4064" layer="48"/>
-<wire x1="160.02" y1="9.144" x2="160.02" y2="12.7" width="0.4064" layer="48"/>
-<wire x1="1.27" y1="5.08" x2="51.435" y2="5.08" width="0.1524" layer="48"/>
-<wire x1="1.27" y1="8.89" x2="51.435" y2="8.89" width="0.1524" layer="48"/>
-<wire x1="1.27" y1="12.7" x2="51.435" y2="12.7" width="0.1524" layer="48"/>
-<wire x1="1.27" y1="16.51" x2="1.27" y2="1.27" width="0.3048" layer="48"/>
-<wire x1="1.27" y1="1.27" x2="51.435" y2="1.27" width="0.3048" layer="48"/>
-<wire x1="51.435" y1="1.27" x2="51.435" y2="5.08" width="0.3048" layer="48"/>
-<wire x1="51.435" y1="5.08" x2="51.435" y2="8.89" width="0.3048" layer="48"/>
-<wire x1="51.435" y1="8.89" x2="51.435" y2="12.7" width="0.3048" layer="48"/>
-<wire x1="51.435" y1="12.7" x2="51.435" y2="16.51" width="0.3048" layer="48"/>
-<wire x1="51.435" y1="16.51" x2="1.27" y2="16.51" width="0.1524" layer="48"/>
-<wire x1="223.2152" y1="5.08" x2="223.2152" y2="9.144" width="0.1524" layer="48"/>
-<wire x1="160.02" y1="5.08" x2="223.2152" y2="5.08" width="0.1524" layer="48"/>
-<wire x1="160.02" y1="9.144" x2="205.74" y2="9.144" width="0.4064" layer="48"/>
-<wire x1="205.74" y1="9.144" x2="223.2152" y2="9.144" width="0.1524" layer="48"/>
-<wire x1="160.02" y1="12.7" x2="205.74" y2="12.7" width="0.1524" layer="48"/>
-<wire x1="205.74" y1="12.7" x2="223.52" y2="12.7" width="0.4064" layer="48"/>
-<wire x1="223.2152" y1="5.08" x2="223.2152" y2="1.27" width="0.1524" layer="48"/>
-<wire x1="223.2152" y1="1.27" x2="223.52" y2="1.27" width="0.3048" layer="48"/>
-<wire x1="223.52" y1="1.27" x2="267.97" y2="1.27" width="0.4064" layer="48"/>
-<wire x1="267.97" y1="1.27" x2="280.67" y2="1.27" width="0.4064" layer="48"/>
-<wire x1="223.52" y1="9.271" x2="280.416" y2="9.271" width="0.762" layer="48"/>
-<wire x1="223.52" y1="21.5138" x2="223.52" y2="21.336" width="0.4064" layer="48"/>
-<wire x1="223.52" y1="21.336" x2="280.416" y2="21.336" width="0.762" layer="48"/>
-<wire x1="280.416" y1="21.336" x2="280.67" y2="21.336" width="0.254" layer="48"/>
-<wire x1="280.67" y1="21.336" x2="280.67" y2="1.27" width="0.4064" layer="48"/>
-<wire x1="280.67" y1="21.336" x2="280.67" y2="27.94" width="0.4064" layer="48"/>
-<wire x1="280.416" y1="21.336" x2="280.416" y2="17.145" width="0.762" layer="48"/>
-<wire x1="280.416" y1="17.145" x2="280.416" y2="9.271" width="0.762" layer="48"/>
-<wire x1="223.52" y1="17.145" x2="280.416" y2="17.145" width="0.1524" layer="48"/>
-<wire x1="267.97" y1="9.525" x2="267.97" y2="5.08" width="0.1524" layer="48"/>
-<wire x1="267.97" y1="5.08" x2="267.97" y2="1.27" width="0.1524" layer="48"/>
-<wire x1="205.74" y1="12.7" x2="205.74" y2="9.144" width="0.4064" layer="48"/>
-<wire x1="205.74" y1="9.144" x2="205.74" y2="1.27" width="0.1524" layer="48"/>
-<wire x1="205.74" y1="1.27" x2="223.2152" y2="1.27" width="0.4064" layer="48"/>
-<wire x1="205.74" y1="1.27" x2="160.02" y2="1.27" width="0.4064" layer="48"/>
-<wire x1="160.02" y1="1.27" x2="160.02" y2="5.08" width="0.4064" layer="48"/>
-<wire x1="280.67" y1="27.94" x2="223.52" y2="27.94" width="0.4064" layer="48"/>
-<wire x1="223.52" y1="27.94" x2="160.02" y2="27.94" width="0.4064" layer="48"/>
-<wire x1="160.02" y1="27.94" x2="160.02" y2="21.336" width="0.4064" layer="48"/>
-<wire x1="160.02" y1="21.336" x2="160.02" y2="12.7" width="0.4064" layer="48"/>
-<wire x1="223.52" y1="21.336" x2="223.52" y2="16.51" width="0.1524" layer="48"/>
-<wire x1="223.52" y1="16.51" x2="160.02" y2="16.51" width="0.1524" layer="48"/>
-<wire x1="160.02" y1="16.51" x2="160.02" y2="21.336" width="0.1524" layer="48"/>
-<wire x1="223.52" y1="27.94" x2="223.52" y2="21.336" width="0.1524" layer="48"/>
-<wire x1="51.435" y1="24.13" x2="1.27" y2="24.13" width="0.1524" layer="48"/>
-<wire x1="1.27" y1="24.13" x2="1.27" y2="20.32" width="0.3048" layer="48"/>
-<wire x1="1.27" y1="20.32" x2="1.27" y2="16.51" width="0.3048" layer="48"/>
-<wire x1="51.435" y1="16.51" x2="51.435" y2="20.32" width="0.3048" layer="48"/>
-<wire x1="1.27" y1="20.32" x2="51.435" y2="20.32" width="0.1524" layer="48"/>
-<wire x1="51.435" y1="20.32" x2="51.435" y2="24.13" width="0.3048" layer="48"/>
-<wire x1="51.435" y1="24.13" x2="51.435" y2="27.94" width="0.3048" layer="48"/>
-<wire x1="51.435" y1="27.94" x2="1.27" y2="27.94" width="0.3048" layer="48"/>
-<wire x1="1.27" y1="27.94" x2="1.27" y2="24.13" width="0.3048" layer="48"/>
-<wire x1="267.97" y1="5.08" x2="223.393" y2="5.08" width="0.1524" layer="48"/>
-<wire x1="223.52" y1="1.27" x2="223.3422" y2="1.397" width="0.1524" layer="48"/>
-<wire x1="223.52" y1="12.7" x2="223.52" y2="17.145" width="0.762" layer="48"/>
-<wire x1="223.52" y1="17.145" x2="223.52" y2="21.336" width="0.762" layer="48"/>
-<wire x1="223.3422" y1="1.397" x2="223.3422" y2="9.271" width="0.4064" layer="48"/>
-<wire x1="223.3422" y1="9.271" x2="223.52" y2="9.271" width="0.4064" layer="48"/>
-<wire x1="223.52" y1="9.271" x2="223.52" y2="12.7" width="0.762" layer="48"/>
-<wire x1="160.02" y1="27.94" x2="160.02" y2="33.909" width="0.4064" layer="48"/>
-<wire x1="160.02" y1="33.909" x2="280.67" y2="33.909" width="0.4064" layer="48"/>
-<wire x1="280.67" y1="33.909" x2="280.67" y2="27.94" width="0.4064" layer="48"/>
-<text x="2.54" y="13.97" size="1.524" layer="48">KVALITA MAT.:</text>
-<text x="224.79" y="10.795" size="5.08" layer="48" ratio="15">&gt;DRAWING_NAME</text>
-<text x="266.065" y="10.795" size="5.08" layer="48" ratio="15">BRD</text>
-<text x="224.79" y="18.415" size="1.524" layer="48">OZNACENI DOKUMENTU:</text>
-<text x="160.655" y="2.54" size="1.524" layer="48">SCHVALIL:</text>
-<text x="161.036" y="6.35" size="1.524" layer="48">VYPRACOVAL:</text>
-<text x="210.82" y="10.16" size="1.524" layer="48">DATUM:</text>
-<text x="234.315" y="2.413" size="1.524" layer="48">&gt;PLOT_DATE_TIME</text>
-<text x="234.315" y="6.223" size="1.524" layer="48">&gt;LAST_DATE_TIME</text>
-<text x="2.54" y="17.78" size="1.524" layer="48">TL. MATERIAL / Cu:</text>
-<text x="2.54" y="10.16" size="1.524" layer="48">POVRCHOVA UPRAVA SPOJU:</text>
-<text x="2.54" y="6.35" size="1.524" layer="48">OBRYSOVE OPRACOVANI:</text>
-<text x="2.54" y="2.54" size="1.524" layer="48">DESKY DODAVAT:</text>
-<text x="269.24" y="6.223" size="1.524" layer="48">MERITKO:</text>
-<text x="2.54" y="25.4" size="1.524" layer="48">ROZMERY:</text>
-<text x="224.79" y="6.223" size="1.524" layer="48">UPRAVA:</text>
-<text x="224.79" y="2.413" size="1.524" layer="48">TISK:</text>
-<text x="2.54" y="21.59" size="1.524" layer="48">NEKOTOVANE TOLERANCE:</text>
-<text x="161.417" y="25.4" size="1.524" layer="48">NAZEV VYROBKU:</text>
-<text x="161.29" y="10.16" size="1.524" layer="48">Format vykresu: Eagle 6.4.0</text>
-<text x="161.29" y="13.97" size="1.524" layer="48">VERZE:</text>
-<text x="225.552" y="25.4" size="1.524" layer="48">Urceno pro firmu:</text>
-<text x="163.0426" y="30.9626" size="1.9304" layer="48" ratio="10">JabloPCB s.r.o.</text>
-<text x="163.0426" y="28.5242" size="1.524" layer="48">www.jablopcb.cz</text>
-<text x="3.175" y="187.96" size="1.9304" layer="48" ratio="15">Typ vykresu:</text>
-<text x="202.6666" y="28.6512" size="1.524" layer="48">jablopcb@jablopcb.cz</text>
-<text x="243.3066" y="28.6512" size="1.524" layer="48">tel., fax. +420 483 515 515</text>
-<text x="190.5508" y="31.0388" size="1.524" layer="48">U Prehrady 5129/67, 466 01 Jablonec n.N., CZ</text>
-<text x="161.417" y="17.78" size="1.524" layer="48">VARIANTA OSAZENI:</text>
-<text x="190.627" y="17.78" size="1.524" layer="48">&gt;assembly_variant</text>
-</package>
 </packages>
 </library>
 </libraries>
@@ -1021,6 +903,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -1280,7 +1165,6 @@ design rules under a new name.</description>
 <attribute name="NAME" x="46.8376" y="25.5524" size="1.016" layer="25" rot="R270"/>
 <attribute name="VALUE" x="46.9646" y="25.1714" size="0.8128" layer="27" rot="R270"/>
 </element>
-<element name="U$5" library="vyber" package="RAM_BRD" value="" x="-114.4016" y="-82.6008"/>
 </elements>
 <signals>
 <signal name="GND">
