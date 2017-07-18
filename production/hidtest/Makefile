@@ -11,8 +11,7 @@ build-lin:
 	gcc test-trezor.c $(CFLAGS) -lhidapi-libusb -o test-trezor
 
 build-win:
-	i686-w64-mingw32-gcc test-trezor.c $(CFLAGS) -Wl,-Bstatic -lhidapi -Wl,-Bdynamic -lsetupapi -mwindows -o test-trezor-32bit.exe
-# /usr/i686-w64-mingw32/sys-root/mingw/lib/libhidapi.a
+	i686-w64-mingw32-gcc test-trezor.c $(CFLAGS) -Wl,-Bstatic -lhidapi -Wl,-Bdynamic -lsetupapi -mconsole -o test-trezor-32bit.exe
 
 .docker-image:
 	$(info Preparing docker image ...)
