@@ -1,0 +1,11 @@
+(module BADMARK (layer F.Cu) (tedit 0)
+  (fp_text reference U$3 (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1.27 1.27) (thickness 0.15)))
+  )
+  (fp_text value "" (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1.27 1.27) (thickness 0.15)))
+  )
+  (fp_poly (pts (xy -0.5 0.5) (xy 0.5 0.5) (xy 0.5 -0.5) (xy -0.5 -0.5)) (layer F.Cu) (width 0))
+  (fp_poly (pts (xy -0.7 0.7) (xy 0.7 0.7) (xy 0.7 -0.7) (xy -0.7 -0.7)) (layer F.Mask) (width 0))
+  (fp_poly (pts (xy -0.5 0.5) (xy 0.5 0.5) (xy 0.5 -0.5) (xy -0.5 -0.5)) (layer Cmts.User) (width 0))
+)
