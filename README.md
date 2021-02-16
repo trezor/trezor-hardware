@@ -4,7 +4,9 @@
 
 https://trezor.io/
 
-## License
+## Open Source Hardware
+
+![oshw](oshw-logo.png)
 
 The content of this repo is dual licensed under the following licenses:
 * [GNU Affero General Public License v3](COPYING)
