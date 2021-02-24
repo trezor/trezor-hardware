@@ -1876,11 +1876,11 @@ design rules under a new name.</description>
 <element name="C54" library="vyber_stara_nemenit" package="0603_REFLOW" value="1u" x="35.75" y="4.1" rot="R180"/>
 <element name="C55" library="vyber_stara_nemenit" package="0402" value="100n" x="47.7" y="4.6" rot="R90"/>
 <element name="C56" library="vyber_stara_nemenit" package="0603_REFLOW" value="1u" x="44.1" y="17.9" rot="R90"/>
-<element name="T1" library="trezor" package="SOT23_REFLOW" value="DMG3415U-7" x="54.65" y="14.1" rot="R270"/>
+<element name="T1" library="trezor" package="SOT23_REFLOW" value="DMP2045U" x="54.65" y="14.1" rot="R270"/>
 <element name="R2" library="vyber_stara_nemenit" package="0402" value="470k" x="54.1" y="11.85" rot="R180"/>
 <element name="C57" library="vyber_stara_nemenit" package="0402" value="220p" x="55.25" y="10.7" rot="R180"/>
 <element name="R3" library="vyber_stara_nemenit" package="0402" value="22k" x="55.95" y="12.25" rot="R270"/>
-<element name="T2" library="trezor" package="SOT23_REFLOW" value="DMG3415U-7" x="61.4" y="30.5" rot="R180"/>
+<element name="T2" library="trezor" package="SOT23_REFLOW" value="DMP2045U" x="61.4" y="30.5" rot="R180"/>
 <element name="R17" library="vyber_stara_nemenit" package="0402" value="470k" x="59" y="27" rot="R270"/>
 <element name="IC1" library="trezor" package="SOT23_MEDIUM_SIZE" value="MIC803-29D2VC3" x="46" y="2.65" rot="R270"/>
 <element name="TP15" library="vyber_stara_nemenit" package="MB1.27" value="" x="51.5" y="13.95" smashed="yes">

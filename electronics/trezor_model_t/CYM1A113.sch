@@ -6526,13 +6526,13 @@
 <part name="C55" library="vyber_stara_nemenit" deviceset="C" device="_0402" value="100n"/>
 <part name="U$84" library="vyber_stara_nemenit" deviceset="GND" device=""/>
 <part name="C56" library="vyber_stara_nemenit" deviceset="C" device="_0603$REFLOW" value="1u"/>
-<part name="T1" library="trezor" deviceset="PMOS" device="_SOT-23_REF" value="DMG3415U-7"/>
+<part name="T1" library="trezor" deviceset="PMOS" device="_SOT-23_REF" value="DMP2045U"/>
 <part name="R2" library="vyber_stara_nemenit" deviceset="R" device="_0402" value="470k"/>
 <part name="C57" library="vyber_stara_nemenit" deviceset="C" device="_0402" value="220p"/>
 <part name="R3" library="vyber_stara_nemenit" deviceset="R" device="_0402" value="22k"/>
 <part name="U$85" library="vyber_stara_nemenit" deviceset="GND" device=""/>
 <part name="U$86" library="vyber_stara_nemenit" deviceset="VCC-2" device="" value="3V3"/>
-<part name="T2" library="trezor" deviceset="PMOS" device="_SOT-23_REF" value="DMG3415U-7"/>
+<part name="T2" library="trezor" deviceset="PMOS" device="_SOT-23_REF" value="DMP2045U"/>
 <part name="R17" library="vyber_stara_nemenit" deviceset="R" device="_0402" value="470k"/>
 <part name="U$51" library="vyber_stara_nemenit" deviceset="VBAT" device="" value="VDD"/>
 <part name="U$52" library="vyber_stara_nemenit" deviceset="VBAT" device="" value="VDD"/>
